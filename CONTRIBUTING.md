@@ -1,42 +1,37 @@
-# CONTRIBUTING
+# Netlify CMS Widget Parent
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+A Netlify CMS widget to select directory parent for an entry
 
-## Setup
+## Development
 
-> Install yarn on your system: https://yarnpkg.com/en/docs/install
-
-```sh
-$ git clone https://github.com/netlify/netlify-identity-widget
-$ cd netlify-identity-widget
-$ yarn
+```bash
+yarn
+yarn develop
 ```
 
-## Building
+## Build
 
-```sh
-$ yarn build
+```bash
+yarn
+yarn build
 ```
 
+## Release
 
-## Running the server
+Make sure you have npm + git credentials set up.
 
-```sh
-$ yarn dev
+- [ ] Make changes and/or merge PRs.
+- [ ] `git checkout master`
+- [ ] `git pull`
+- [ ] `yarn`
+- [ ] Set up semantic release environment variables:
+
+```bash
+export GIT_AUTHOR_NAME=<your-github-login>
+export GIT_AUTHOR_EMAIL=<your-github-email>
+export GIT_COMMITTER_NAME=<your-github-login>
+export GIT_COMMITTER_EMAIL=<your-github-email>
+export GITHUB_TOKEN=<github-token-with-public_repo-permissions>
 ```
 
-## Pull Requests
-
-We actively welcome your pull requests.
-
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-
-## License
-
-By contributing to Netlify Identity Widget, you agree that your contributions will be licensed
-under its [MIT license](LICENSE).
+- [ ] `npm run release`
