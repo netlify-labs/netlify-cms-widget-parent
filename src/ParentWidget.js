@@ -121,12 +121,12 @@ export class ParentControl extends React.Component {
   }
 
   render() {
-    const { forID, classNameWrapper, setActiveStyle, setInactiveStyle } = this.props;
+    const { forID, classNameWrapper, setActiveStyle, setInactiveStyle, collection } = this.props;
 
     const fullPath = this.getFullPath();
     const parentPath = this.getParent(fullPath) || '';
     const parent = this.state.entries.find((e) => this.getPath(e.path) === parentPath);
-    const label = (parent && parent.data.title) || '';
+    const label = (parent && parent.data.title) || collection.get('label');
 
     const options = [
       {

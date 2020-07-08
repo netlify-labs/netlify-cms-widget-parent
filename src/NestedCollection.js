@@ -85,15 +85,13 @@ const TreeNode = (props) => {
   });
 
   return sortedData.map((node) => {
-    const leaf = node.children.length <= 1 && !node.children[0]?.isDir && depth > 0;
-    if (leaf) {
+    if (!node.isDir) {
       return null;
     }
 
     const title = getNodeTitle(node);
 
-    const hasChildren = depth === 0 || node.children.some((c) => c.children.some((c) => c.isDir));
-
+    const hasChildren = depth === 0 || node.children.some((c) => c.isDir);
     return (
       <React.Fragment key={node.path}>
         <TreeNavLink
