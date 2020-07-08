@@ -12,6 +12,9 @@
     "semantic-release": "cross-env CI=true HUSKY_SKIP_HOOKS=1 semantic-release",
     "release": "run-s build semantic-release publish"
   },
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/netlify-labs/netlify-cms-widget-parent.git"

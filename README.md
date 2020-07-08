@@ -4,36 +4,24 @@ A Netlify CMS widget to select directory parent for an entry
 
 ## Usage
 
-## Development
+Example for using in an HTML file
 
-```bash
-yarn
-yarn develop
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/@netlify/netlify-cms-widget-parent@^1.0.0/dist/netlify-cms-widget-parent.js"></script>
+    <script>
+      const parentWidget = window.NetlifyCmsWidgetParent;
+      CMS.registerWidget('parent', parentWidget.control, parentWidget.preview);
+    </script>
+  </body>
+</html>
 ```
-
-## Build
-
-```bash
-yarn
-yarn build
-```
-
-## Release
-
-Make sure you have npm + git credentials set up.
-
-- [ ] Make changes and/or merge PRs.
-- [ ] `git checkout master`
-- [ ] `git pull`
-- [ ] `yarn`
-- [ ] Set up semantic release environment variables:
-
-```bash
-export GIT_AUTHOR_NAME=<your-github-login>
-export GIT_AUTHOR_EMAIL=<your-github-email>
-export GIT_COMMITTER_NAME=<your-github-login>
-export GIT_COMMITTER_EMAIL=<your-github-email>
-export GITHUB_TOKEN=<github-token-with-public_repo-permissions>
-```
-
-- [ ] `npm run release`
