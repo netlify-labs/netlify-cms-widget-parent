@@ -10,7 +10,7 @@
     "format": "prettier --write 'src/**/*.js'",
     "format:ci": "prettier --check 'src/**/*.js'",
     "semantic-release": "cross-env CI=true HUSKY_SKIP_HOOKS=1 semantic-release",
-    "release": "run-s build semantic-release publish"
+    "release": "run-s build semantic-release && npm publish"
   },
   "files": [
     "dist/"
