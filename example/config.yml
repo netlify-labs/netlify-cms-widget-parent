@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: CMS_BRANCH_PLACEHOLDER
+
+local_backend: true
+media_folder: 'example/media'
+
+collections:
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: example/content/pages
+    create: true
+    nested: { depth: 100 }
+    fields:
+      - label: Title
+        name: title
+        widget: string
+    meta: { path: { label: Parent, widget: parent, index_file: 'index' } }
