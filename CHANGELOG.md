@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.1...v1.0.2) (2020-07-08)
+
+
+### Bug Fixes
+
+* don't show collection name as root ([2435364](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/2435364c12c63dfed32e6a36cb57c6d56bd7d376))
+
 ## [1.0.1](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.0...v1.0.1) (2020-07-08)
 
 
