@@ -68,9 +68,7 @@ const TreeNavLink = styled.div`
 `;
 
 const getNodeTitle = (node) => {
-  const title = node.isRoot
-    ? node.title
-    : node.children.find((c) => !c.isDir && c.title)?.title || node.title;
+  const title = node.children.find((c) => !c.isDir && c.title)?.title || node.title;
   return title;
 };
 
