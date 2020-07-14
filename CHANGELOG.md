@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.3...v1.0.4) (2020-07-14)
+
+
+### Bug Fixes
+
+* update options on parent change ([4a1c71f](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/4a1c71f154ba52792f760fab470a21b501652687))
+
 ## [1.0.3](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.2...v1.0.3) (2020-07-14)
 
 
