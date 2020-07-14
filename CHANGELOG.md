@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.4...v1.0.5) (2020-07-14)
+
+
+### Bug Fixes
+
+* handle undefined access ([caa1ef4](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/caa1ef4617d1914096fc1bb4bfaf2913a69b308d))
+
 ## [1.0.4](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.3...v1.0.4) (2020-07-14)
 
 
