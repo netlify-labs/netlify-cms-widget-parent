@@ -1,5 +1,5 @@
 import React from 'react';
-import Select from 'react-select';
+import AsyncSelect from 'react-select/async';
 import { reactSelectStyles } from 'netlify-cms-ui-default/dist/esm/styles';
 import { NestedCollection } from './NestedCollection';
 
@@ -45,7 +45,7 @@ const Option = (props) => {
 export class ParentControl extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { entries: [], title: '' };
+    this.state = { title: '', optionsLoaded: false, options: [] };
     this.selectRef = React.createRef();
   }
 
@@ -93,20 +93,6 @@ export class ParentControl extends React.Component {
   }
 
   async componentDidMount() {
-    const { forID, query, collection } = this.props;
-
-    const collectionName = collection.get('name');
-
-    const {
-      payload: {
-        response: { hits = [] },
-      },
-    } = await query(forID, collectionName, ['path'], '');
-
-    this.setState({
-      entries: hits,
-    });
-
     if (this.isNewRecord()) {
       this.props.onChange(this.getValue() + '/');
       // track title field so we can use it for the folder name
@@ -114,35 +100,56 @@ export class ParentControl extends React.Component {
       titleInput.addEventListener('input', (e) => {
         const title = e.target.value;
         this.setState({ title });
-        const parent = this.selectRef.current.props.options[0].value;
-        this.handleChange(parent);
+        const selectProps = this.selectRef.current.props;
+        const currentParent = selectProps.value?.value || '/';
+        this.handleChange(currentParent);
       });
     }
   }
 
-  render() {
-    const { forID, classNameWrapper, setActiveStyle, setInactiveStyle, collection } = this.props;
+  async loadOptions() {
+    if (this.state.optionsLoaded) {
+      return this.state.options;
+    }
+    const { forID, query, collection } = this.props;
+    const collectionName = collection.get('name');
+    const {
+      payload: {
+        response: { hits = [] },
+      },
+    } = await query(forID, collectionName, ['path'], '');
 
     const fullPath = this.getFullPath();
     const parentPath = this.getParent(fullPath) || '';
-    const parent = this.state.entries.find((e) => this.getPath(e.path) === parentPath);
+    const parent = hits.find((e) => this.getPath(e.path) === parentPath);
     const label = (parent && parent.data.title) || collection.get('label');
-
     const options = [
       {
         value: parentPath,
         label,
         collection: this.props.collection,
-        entries: this.state.entries,
+        entries: hits,
         onSelectNode: (value) => this.handleChange(value),
       },
     ];
 
+    this.setState({
+      optionsLoaded: true,
+      options,
+    });
+
+    return options;
+  }
+
+  render() {
+    const { forID, classNameWrapper, setActiveStyle, setInactiveStyle } = this.props;
+
     return (
-      <Select
-        value={options[0]}
+      <AsyncSelect
+        value={this.state.options[0]}
+        loadOptions={() => this.loadOptions()}
+        defaultOptions
         inputId={forID}
-        options={options}
         className={classNameWrapper}
         onFocus={setActiveStyle}
         onBlur={setInactiveStyle}
