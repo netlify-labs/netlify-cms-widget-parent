@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.2...v1.0.3) (2020-07-14)
+
+
+### Bug Fixes
+
+* report loading, handle empty parent edge cases ([#2](https://github.com/netlify-labs/netlify-cms-widget-parent/issues/2)) ([5936c27](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/5936c271e28be3004a649480a49f39de34787626))
+
 ## [1.0.2](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.1...v1.0.2) (2020-07-08)
 
 
