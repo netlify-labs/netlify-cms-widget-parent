@@ -63,7 +63,7 @@ export class ParentControl extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.value !== this.props.value) {
+    if (prevProps.value !== this.props.value && this.state.optionsLoaded) {
       // update options with the new parent
       this.setState({
         options: this.getOptions(this.state.options[0].entries),
