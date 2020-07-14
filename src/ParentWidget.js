@@ -62,6 +62,15 @@ export class ParentControl extends React.Component {
     this.props.onChange(newPath);
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.value !== this.props.value) {
+      // update options with the new parent
+      this.setState({
+        options: this.getOptions(this.state.options[0].entries),
+      });
+    }
+  }
+
   getValue() {
     return this.props.value || '';
   }
@@ -107,18 +116,8 @@ export class ParentControl extends React.Component {
     }
   }
 
-  async loadOptions() {
-    if (this.state.optionsLoaded) {
-      return this.state.options;
-    }
-    const { forID, query, collection } = this.props;
-    const collectionName = collection.get('name');
-    const {
-      payload: {
-        response: { hits = [] },
-      },
-    } = await query(forID, collectionName, ['path'], '');
-
+  getOptions(hits) {
+    const { collection } = this.props;
     const fullPath = this.getFullPath();
     const parentPath = this.getParent(fullPath) || '';
     const parent = hits.find((e) => this.getPath(e.path) === parentPath);
@@ -133,6 +132,22 @@ export class ParentControl extends React.Component {
       },
     ];
 
+    return options;
+  }
+
+  async loadOptions() {
+    if (this.state.optionsLoaded) {
+      return this.state.options;
+    }
+    const { forID, query, collection } = this.props;
+    const collectionName = collection.get('name');
+    const {
+      payload: {
+        response: { hits = [] },
+      },
+    } = await query(forID, collectionName, ['path'], '');
+
+    const options = this.getOptions(hits);
     this.setState({
       optionsLoaded: true,
       options,
