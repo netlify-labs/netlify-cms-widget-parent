@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: log versions
         run: node --version && npm --version && yarn --version
-      - name: install dependecies
+      - name: install dependencies
         run: yarn --frozen-lockfile
       - name: run linter
         run: yarn lint
