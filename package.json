@@ -31,8 +31,8 @@
   },
   "homepage": "https://github.com/netlify-labs/netlify-cms-widget-parent#readme",
   "dependencies": {
-    "@emotion/core": "^10.0.9",
-    "@emotion/styled": "^10.0.9",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "netlify-cms-ui-default": "^2.11.1",
     "react-select": "^3.1.0",
     "react": "^16.8.4",
