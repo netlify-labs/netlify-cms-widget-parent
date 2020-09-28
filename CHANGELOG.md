@@ -1,3 +1,16 @@
+## [1.0.6](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.5...v1.0.6) (2020-09-28)
+
+
+### Bug Fixes
+
+* trim leading, trailing, double replacement char ([#41](https://github.com/netlify-labs/netlify-cms-widget-parent/issues/41)) ([61d8b83](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/61d8b836e234431f0439b318369dc879dbe6e4b0))
+* **deps:** update dependency @emotion/core to v10.0.34 ([96769cd](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/96769cdb48bc3f53a4cbd80a5192b38ed34063ae))
+* **deps:** update dependency @emotion/core to v10.0.35 ([6fd25d0](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/6fd25d017ea52c7c2fc1752eb7405fa25dc7d1b6))
+* **deps:** update dependency netlify-cms-ui-default to v2.11.3 ([e7f8e13](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/e7f8e138968a7aaaa7d19035eaea34b4266b5826))
+* **deps:** update dependency netlify-cms-ui-default to v2.11.4 ([640831d](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/640831d96ab75cfd2b2c8dc5cbde945957229911))
+* **deps:** update dependency netlify-cms-ui-default to v2.11.6 ([90199b6](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/90199b6cf54f0161fd835a2ea01db52996da0f73))
+* **deps:** update emotion monorepo ([cee13ad](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/cee13ada30061629538e16d193a91fd3a542b3a0))
+
 ## [1.0.5](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.4...v1.0.5) (2020-07-14)
 
 
