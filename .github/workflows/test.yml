@@ -40,5 +40,7 @@ jobs:
         run: yarn lint
       - name: check formatting
         run: yarn format:ci
+      - name: run tests
+        run: yarn test
       - name: run build
         run: yarn build
