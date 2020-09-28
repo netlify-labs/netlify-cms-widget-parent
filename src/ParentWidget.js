@@ -42,6 +42,23 @@ const Option = (props) => {
   );
 };
 
+export const sanitizePath = (path) => {
+  const replacement = '-';
+  const sanitizedPath = path.replace(/[^a-z0-9]/gi, replacement).toLowerCase();
+
+  // Remove any doubled or leading/trailing replacement characters (that were added in the sanitizers).
+  const doubleReplacement = new RegExp(`(?:${replacement})+`, 'g');
+  const trailingReplacement = new RegExp(`${replacement}$`);
+  const leadingReplacement = new RegExp(`^${replacement}`);
+
+  const normalizedPath = sanitizedPath
+    .replace(doubleReplacement, replacement)
+    .replace(leadingReplacement, '')
+    .replace(trailingReplacement, '');
+
+  return normalizedPath;
+};
+
 export class ParentControl extends React.Component {
   constructor(props) {
     super(props);
@@ -54,7 +71,7 @@ export class ParentControl extends React.Component {
     let folder;
     if (this.isNewRecord()) {
       const title = this.state.title;
-      folder = title.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+      folder = sanitizePath(title);
     } else {
       folder = getFolder(value);
     }
