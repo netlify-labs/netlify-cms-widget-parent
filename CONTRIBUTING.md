@@ -16,22 +16,12 @@ yarn
 yarn build
 ```
 
-## Release
+## Releasing
 
-Make sure you have npm + git credentials set up.
-
-- [ ] Make changes and/or merge PRs.
-- [ ] `git checkout master`
-- [ ] `git pull`
-- [ ] `yarn`
-- [ ] Set up semantic release environment variables:
-
-```bash
-export GIT_AUTHOR_NAME=<your-github-login>
-export GIT_AUTHOR_EMAIL=<your-github-email>
-export GIT_COMMITTER_NAME=<your-github-login>
-export GIT_COMMITTER_EMAIL=<your-github-email>
-export GITHUB_TOKEN=<github-token-with-public_repo-permissions>
-```
+1. Merge the release PR
+2. Switch to the default branch `git checkout master`
+3. Pull latest changes `git pull`
+4. `yarn`
+5. Publish the package `npm publish`
 
 - [ ] `npm run release`
