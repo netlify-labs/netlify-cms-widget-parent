@@ -54,7 +54,7 @@
     "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^7.4.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-react": "^7.20.3",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
