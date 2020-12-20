@@ -19,9 +19,7 @@ yarn build
 ## Releasing
 
 1. Merge the release PR
-2. Switch to the default branch `git checkout master`
+2. Switch to the default branch `git checkout main`
 3. Pull latest changes `git pull`
 4. `yarn`
 5. Publish the package `npm publish`
-
-- [ ] `npm run release`
