@@ -10,6 +10,9 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'dist'),
       filename: 'netlify-cms-widget-parent.js',
     },
+    resolve: {
+      fallback: { path: require.resolve('path-browserify') },
+    },
     devtool: 'source-map',
     mode: env.production ? 'production' : 'development',
     module: {
