@@ -2,6 +2,7 @@ import React from 'react';
 import AsyncSelect from 'react-select/async';
 import { reactSelectStyles } from 'netlify-cms-ui-default/dist/esm/styles';
 import { NestedCollection } from './NestedCollection';
+import slugify from 'slugify';
 
 const trimStart = (str, prefix) => {
   return str.substring(prefix.length);
@@ -44,7 +45,7 @@ const Option = (props) => {
 
 export const sanitizePath = (path) => {
   const replacement = '-';
-  const sanitizedPath = path.replace(/[^a-z0-9]/gi, replacement).toLowerCase();
+  const sanitizedPath = slugify(path.toLowerCase(), replacement);
 
   // Remove any doubled or leading/trailing replacement characters (that were added in the sanitizers).
   const doubleReplacement = new RegExp(`(?:${replacement})+`, 'g');
