@@ -20,4 +20,12 @@ describe('sanitizePath', () => {
   it('should remove double replacer', () => {
     expect(sanitizePath('Who   Are    We')).toBe('who-are-we');
   });
+
+  it('should keep diacritis', () => {
+    expect(sanitizePath('ăștia sunteți voi')).toBe('astia-sunteti-voi');
+  });
+
+  it('should keep diacritis and remove whitespace, trailing and leading characters', () => {
+    expect(sanitizePath('?ăștia   sunteți voi ?  ')).toBe('astia-sunteti-voi');
+  });
 });
