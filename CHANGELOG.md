@@ -11,6 +11,17 @@
 * **deps:** update dependency netlify-cms-ui-default to v2.11.6 ([90199b6](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/90199b6cf54f0161fd835a2ea01db52996da0f73))
 * **deps:** update emotion monorepo ([cee13ad](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/cee13ada30061629538e16d193a91fd3a542b3a0))
 
+### [1.0.8](https://www.github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.7...v1.0.8) (2021-04-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency netlify-cms-ui-default to ^2.12.1 ([#141](https://www.github.com/netlify-labs/netlify-cms-widget-parent/issues/141)) ([d026c3f](https://www.github.com/netlify-labs/netlify-cms-widget-parent/commit/d026c3f9220381b85a491ed3e22dfa6f846ac8dd))
+* **deps:** update dependency netlify-cms-ui-default to ^2.12.2 ([#179](https://www.github.com/netlify-labs/netlify-cms-widget-parent/issues/179)) ([2d04a35](https://www.github.com/netlify-labs/netlify-cms-widget-parent/commit/2d04a35a8252ef81858256dac1bdc6b245855934))
+* **deps:** update dependency netlify-cms-ui-default to v2.12.1 ([#139](https://www.github.com/netlify-labs/netlify-cms-widget-parent/issues/139)) ([9aa3f36](https://www.github.com/netlify-labs/netlify-cms-widget-parent/commit/9aa3f36e31271d8767a824051278cdd8a60eb840))
+* **deps:** update dependency react-select to v3.2.0 ([ee8b0f1](https://www.github.com/netlify-labs/netlify-cms-widget-parent/commit/ee8b0f107368d764ad35f63f7eda29fec2e9dca8))
+* use slugify for path formatting ([#187](https://www.github.com/netlify-labs/netlify-cms-widget-parent/issues/187)) ([46528d7](https://www.github.com/netlify-labs/netlify-cms-widget-parent/commit/46528d78f6055c955a6eecafb76e52b4502736a8))
+
 ### [1.0.7](https://www.github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.6...v1.0.7) (2020-12-20)
 
 
