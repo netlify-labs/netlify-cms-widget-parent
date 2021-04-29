@@ -160,9 +160,7 @@ export class ParentControl extends React.Component {
     const { forID, query, collection } = this.props;
     const collectionName = collection.get('name');
     const {
-      payload: {
-        response: { hits = [] },
-      },
+      payload: { hits = [] },
     } = await query(forID, collectionName, ['path'], '');
 
     const options = this.getOptions(hits);
