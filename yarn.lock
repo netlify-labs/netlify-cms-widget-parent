@@ -5627,10 +5627,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-netlify-cms-ui-default@^2.12.2:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.12.2.tgz#35c04cbb68a7f31f5d07fcb36f855a56ec56c802"
-  integrity sha512-N88nLQi10wHCwXyPe4FnHMYsWSHut6MLcu27IIY96sI1SL4a/SiMKAUNtEIwKHO36CUG0zlNtXQtaSOi6FFvmQ==
+netlify-cms-ui-default@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.13.0.tgz#31295db6c64c47c27f7687daca373b6c39a3d1f1"
+  integrity sha512-0wU1ja5HOw+wJtlw8fx2laUF7Yu+aFk6UP19/riEA9RxDmqWEQvRVvCQdjgR412z1RO/ljVBMda5ahpDjppZhQ==
   dependencies:
     react-aria-menubutton "^6.0.0"
     react-toggled "^1.1.2"
