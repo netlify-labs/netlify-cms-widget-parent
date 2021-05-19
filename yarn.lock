@@ -2723,14 +2723,6 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-create-react-context@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.3.0.tgz#546dede9dc422def0d3fc2fe03afe0bc0f4f7d8c"
-  integrity sha512-dNldIoSuNSvlTJ7slIKC/ZFGKexBMBrrcc+TTe1NdmROnaASuLPvqpwj9v4XS4uXZ8+YPu0sNmShX2rXI5LNsw==
-  dependencies:
-    gud "^1.0.0"
-    warning "^4.0.3"
-
 cross-env@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
@@ -3946,11 +3938,6 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
-
-gud@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
-  integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -5322,7 +5309,7 @@ loglevel@^1.6.8:
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.7.1.tgz#005fde2f5e6e47068f935ff28573e125ef72f197"
   integrity sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw==
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -5609,12 +5596,12 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-netlify-cms-ui-default@^2.13.2:
-  version "2.13.2"
-  resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.13.2.tgz#e46afe67652b8c2b1c71dbbd6191545e9c75b3d4"
-  integrity sha512-w8MLYaVVHuFqsK9t5/nHdvUjn351VLKRrjYYVjY8OcdN40mmPHoIS6vMMgDewmGkZxD+W/WkdVweelHKyKpiKQ==
+netlify-cms-ui-default@^2.13.3:
+  version "2.13.3"
+  resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.13.3.tgz#f8d22ba9341514c74b127788500df6b273eeec38"
+  integrity sha512-vQaNTlPoGHtzlGiTnFNkc0uxQWlBsy2NMJOfebSlgBcyeeGqQYLiAlnnVniMQMKZlWb9kUrBqxoMoiLIl6HEdg==
   dependencies:
-    react-aria-menubutton "^6.0.0"
+    react-aria-menubutton "^7.0.0"
     react-toggled "^1.1.2"
     react-transition-group "^4.0.0"
 
@@ -6325,21 +6312,14 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-aria-menubutton@^6.0.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/react-aria-menubutton/-/react-aria-menubutton-6.3.0.tgz#01acc4322c5271488941270b278b17001031e687"
-  integrity sha512-qlvbPgBDg+YreqrAsT2I0qpQfM7soRxA6dsTacogfCoVajcTEsgIPU3ewS7IzPvm+UMphK5Z8684WA2TNP3Zmg==
+react-aria-menubutton@^7.0.0:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/react-aria-menubutton/-/react-aria-menubutton-7.0.2.tgz#0bcbb929f609e94253e5ea71147a8cce54c2defc"
+  integrity sha512-Y1GbKiTlec9RKLXLZPkZIMXRxQKIhvabZ+KRXBLoRPPAX2XMopJLkyVvN8sQnBMy7nyKfjgpZHgsX98/9CyP6A==
   dependencies:
-    create-react-context "^0.3.0"
     focus-group "^0.3.1"
     prop-types "^15.6.0"
-    react-display-name "^0.2.4"
     teeny-tap "^0.2.0"
-
-react-display-name@^0.2.4:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/react-display-name/-/react-display-name-0.2.5.tgz#304c7cbfb59ee40389d436e1a822c17fe27936c6"
-  integrity sha512-I+vcaK9t4+kypiSgaiVWAipqHRXYmZIuAiS8vzFvXHHXVigg/sMKwlRgLy6LH2i3rmP+0Vzfl5lFsFRwF1r3pg==
 
 react-dom@^16.8.4:
   version "16.14.0"
@@ -7827,13 +7807,6 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
-
-warning@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
-  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
-  dependencies:
-    loose-envify "^1.0.0"
 
 watchpack@^2.0.0:
   version "2.1.1"
