@@ -11,6 +11,13 @@
 * **deps:** update dependency netlify-cms-ui-default to v2.11.6 ([90199b6](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/90199b6cf54f0161fd835a2ea01db52996da0f73))
 * **deps:** update emotion monorepo ([cee13ad](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/cee13ada30061629538e16d193a91fd3a542b3a0))
 
+### [1.0.12](https://www.github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.11...v1.0.12) (2021-06-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency netlify-cms-ui-default to ^2.13.4 ([c6a0da2](https://www.github.com/netlify-labs/netlify-cms-widget-parent/commit/c6a0da26a363d9db22c5c59d61d8178d34863a41))
+
 ### [1.0.11](https://www.github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.10...v1.0.11) (2021-05-24)
 
 
