@@ -43,7 +43,8 @@ const Option = (props) => {
   );
 };
 
-export const sanitizePath = (path) => slugify(path, { replacement: '-', lower: true, remove: /\./ });
+export const sanitizePath = (path) =>
+  slugify(path, { replacement: '-', lower: true, remove: /\./ });
 
 export class ParentControl extends React.Component {
   constructor(props) {
