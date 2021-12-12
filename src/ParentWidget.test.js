@@ -30,6 +30,6 @@ describe('sanitizePath', () => {
   });
 
   it('should remove "."s', () => {
-    expect(sanitizePath('who are.we')).toBe('who-are-we');
+    expect(sanitizePath('who are.we')).toBe('who-arewe');
   });
 });
