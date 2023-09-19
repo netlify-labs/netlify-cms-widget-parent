@@ -28,4 +28,8 @@ describe('sanitizePath', () => {
   it('should keep diacritis and remove whitespace, trailing and leading characters', () => {
     expect(sanitizePath('?ăștia   sunteți voi ?  ')).toBe('astia-sunteti-voi');
   });
+
+  it('should remove "."s', () => {
+    expect(sanitizePath('who are.we')).toBe('who-are-we');
+  });
 });
