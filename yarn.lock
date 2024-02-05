@@ -2172,7 +2172,7 @@
     "@types/estree" "*"
     "@types/json-schema" "*"
 
-"@types/estree@*", "@types/estree@^1.0.0":
+"@types/estree@*", "@types/estree@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.5.tgz#a6ce3e556e00fd9895dd872dd172ad0d4bd687f4"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
@@ -2242,9 +2242,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "20.11.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.5.tgz#be10c622ca7fcaa3cf226cf80166abc31389d86e"
-  integrity sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==
+  version "20.11.16"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.16.tgz#4411f79411514eb8e2926f036c86c9f0e4ec6708"
+  integrity sha512-gKb0enTmRCzXSSUJDq6/sPcqrfCv2mkkG6Jt/clpn5eiCbKTY+SgZUxo+p8ZKMof5dCp9vHQUAB7wOUTod22wQ==
   dependencies:
     undici-types "~5.26.4"
 
@@ -3039,16 +3039,6 @@ browser-process-hrtime@^1.0.0:
   resolved "https://registry.yarnpkg.com/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz#3c9b4b7d782c8121e56f10106d84c0d0ffc94626"
   integrity sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==
 
-browserslist@^4.14.5:
-  version "4.22.2"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.22.2.tgz#704c4943072bd81ea18997f3bd2180e89c77874b"
-  integrity sha512-0UgcrvQmBDvZHFGdYUehrCNIazki7/lUP3kkoi/r3YB2amZbFM9J43ZRkJTXBUZK4gmx56+Sqk9+Vs9mwZx9+A==
-  dependencies:
-    caniuse-lite "^1.0.30001565"
-    electron-to-chromium "^1.4.601"
-    node-releases "^2.0.14"
-    update-browserslist-db "^1.0.13"
-
 browserslist@^4.20.2:
   version "4.21.4"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.4.tgz#e7496bbc67b9e39dd0f98565feccdcb0d4ff6987"
@@ -3059,7 +3049,7 @@ browserslist@^4.20.2:
     node-releases "^2.0.6"
     update-browserslist-db "^1.0.9"
 
-browserslist@^4.22.2:
+browserslist@^4.21.10, browserslist@^4.22.2:
   version "4.22.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.22.3.tgz#299d11b7e947a6b843981392721169e27d60c5a6"
   integrity sha512-UAp55yfwNv0klWNapjs/ktHoguxuQNGnOzxYmfnXIS+8AsRDZkSDxg7R1AX3GKzn078SBI5dzwzj/Yx0Or0e3A==
@@ -3156,10 +3146,10 @@ caniuse-lite@^1.0.30001400:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001473.tgz#3859898b3cab65fc8905bb923df36ad35058153c"
   integrity sha512-ewDad7+D2vlyy+E4UJuVfiBsU69IL+8oVmTuZnH5Q6CIUbxNfI50uVpRHbUPDD6SUaN2o0Lh4DhTrvLG/Tn1yg==
 
-caniuse-lite@^1.0.30001565, caniuse-lite@^1.0.30001580:
-  version "1.0.30001581"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001581.tgz#0dfd4db9e94edbdca67d57348ebc070dece279f4"
-  integrity sha512-whlTkwhqV2tUmP3oYhtNfaWGYHDdS3JYFQBKXxcUR9qqPWsRhFHhoISO2Xnl/g0xyKzht9mI1LZpiNWfMzHixQ==
+caniuse-lite@^1.0.30001580:
+  version "1.0.30001583"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001583.tgz#abb2970cc370801dc7e27bf290509dc132cfa390"
+  integrity sha512-acWTYaha8xfhA/Du/z4sNZjHUWjkiuoAi2LM+T/aL+kemKQgPT1xBb/YKjlQ0Qo8gvbHsGNplrEJ+9G3gL7i4Q==
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -3886,10 +3876,10 @@ electron-to-chromium@^1.4.251:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.348.tgz#f49379dc212d79f39112dd026f53e371279e433d"
   integrity sha512-gM7TdwuG3amns/1rlgxMbeeyNoBFPa+4Uu0c7FeROWh4qWmvSOnvcslKmWy51ggLKZ2n/F/4i2HJ+PVNxH9uCQ==
 
-electron-to-chromium@^1.4.601, electron-to-chromium@^1.4.648:
-  version "1.4.648"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.648.tgz#c7b46c9010752c37bb4322739d6d2dd82354fbe4"
-  integrity sha512-EmFMarXeqJp9cUKu/QEciEApn0S/xRcpZWuAm32U7NgoZCimjsilKXHRO9saeEW55eHZagIDg6XTUOv32w9pjg==
+electron-to-chromium@^1.4.648:
+  version "1.4.656"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.656.tgz#b374fb7cab9b782a5bc967c0ce0e19826186b9c9"
+  integrity sha512-9AQB5eFTHyR3Gvt2t/NwR0le2jBSUNwCnMbUCejFWHD+so4tH40/dRLgoE+jxlPeWS43XJewyvCv+I8LPMl49Q==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -8327,7 +8317,7 @@ terminal-link@^2.0.0:
     ansi-escapes "^4.2.1"
     supports-hyperlinks "^2.0.0"
 
-terser-webpack-plugin@^5.3.7:
+terser-webpack-plugin@^5.3.10:
   version "5.3.10"
   resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-5.3.10.tgz#904f4c9193c6fd2a03f693a2150c62a92f40d199"
   integrity sha512-BKFPWlPDndPs+NGGCr1U59t0XScL5317Y0UReNrHaw9/FwhPENlq6bfgs+4yPfyP51vqC1bQ4rp1EfXW5ZSH9w==
@@ -8907,18 +8897,18 @@ webpack-sources@^3.2.3:
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
 webpack@^5.11.0:
-  version "5.89.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.89.0.tgz#56b8bf9a34356e93a6625770006490bf3a7f32dc"
-  integrity sha512-qyfIC10pOr70V+jkmud8tMfajraGCZMBWJtrmuBymQKCrLTRejBI8STDp1MCyZu/QTdZSeacCQYpYNQVOzX5kw==
+  version "5.90.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.90.1.tgz#62ab0c097d7cbe83d32523dbfbb645cdb7c3c01c"
+  integrity sha512-SstPdlAC5IvgFnhiRok8hqJo/+ArAbNv7rhU4fnWGHNVfN59HSQFaxZDSAL3IFG2YmqxuRs+IU33milSxbPlog==
   dependencies:
     "@types/eslint-scope" "^3.7.3"
-    "@types/estree" "^1.0.0"
+    "@types/estree" "^1.0.5"
     "@webassemblyjs/ast" "^1.11.5"
     "@webassemblyjs/wasm-edit" "^1.11.5"
     "@webassemblyjs/wasm-parser" "^1.11.5"
     acorn "^8.7.1"
     acorn-import-assertions "^1.9.0"
-    browserslist "^4.14.5"
+    browserslist "^4.21.10"
     chrome-trace-event "^1.0.2"
     enhanced-resolve "^5.15.0"
     es-module-lexer "^1.2.1"
@@ -8932,7 +8922,7 @@ webpack@^5.11.0:
     neo-async "^2.6.2"
     schema-utils "^3.2.0"
     tapable "^2.1.1"
-    terser-webpack-plugin "^5.3.7"
+    terser-webpack-plugin "^5.3.10"
     watchpack "^2.4.0"
     webpack-sources "^3.2.3"
 
