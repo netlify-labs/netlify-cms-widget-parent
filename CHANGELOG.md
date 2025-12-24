@@ -11,6 +11,22 @@
 * **deps:** update dependency netlify-cms-ui-default to v2.11.6 ([90199b6](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/90199b6cf54f0161fd835a2ea01db52996da0f73))
 * **deps:** update emotion monorepo ([cee13ad](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/cee13ada30061629538e16d193a91fd3a542b3a0))
 
+### [1.0.13](https://github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.12...v1.0.13) (2022-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency netlify-cms-ui-default to ^2.14.0 ([9a715f7](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/9a715f7b43f4362ef220a8f17fda602ed0cbee02))
+* **deps:** update dependency netlify-cms-ui-default to ^2.15.0 ([7df81a3](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/7df81a3a7b5fecf59d68b3293287442141390b96))
+* **deps:** update dependency netlify-cms-ui-default to ^2.15.1 ([c71d295](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/c71d295d5b7ab1470f0e8218e27825bf29aa88ac))
+* **deps:** update dependency netlify-cms-ui-default to ^2.15.2 ([4a5eeb1](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/4a5eeb18b57b8c214a2b0bd39a58927b26de1173))
+* **deps:** update dependency netlify-cms-ui-default to ^2.15.3 ([fc0db7d](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/fc0db7d2fb4d214d5c9d37ced828565bf66ec839))
+* **deps:** update dependency netlify-cms-ui-default to ^2.15.4 ([f62cfd9](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/f62cfd989648f285e1b9014af82d607c1f552ee8))
+* **deps:** update dependency netlify-cms-ui-default to ^2.15.5 ([8a640ef](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/8a640ef957a0dfc3b907e38a1bb0294360c4ff37))
+* **deps:** update dependency slugify to v1.6.1 ([ef66b3f](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/ef66b3f5baad9aa485f31ec68757ba01ba23a54d))
+* **deps:** update dependency slugify to v1.6.2 ([c05806d](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/c05806d343940511774cb25c3e0d1af57ed3b1b1))
+* **deps:** update dependency slugify to v1.6.3 ([38839da](https://github.com/netlify-labs/netlify-cms-widget-parent/commit/38839dabc6d03b411e9abb257ea6dcf895298d5b))
+
 ### [1.0.12](https://www.github.com/netlify-labs/netlify-cms-widget-parent/compare/v1.0.11...v1.0.12) (2021-06-14)
 
 
