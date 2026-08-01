@@ -45,19 +45,7 @@ const Option = (props) => {
 
 export const sanitizePath = (path) => {
   const replacement = '-';
-  const sanitizedPath = slugify(path.toLowerCase(), replacement);
-
-  // Remove any doubled or leading/trailing replacement characters (that were added in the sanitizers).
-  const doubleReplacement = new RegExp(`(?:${replacement})+`, 'g');
-  const trailingReplacement = new RegExp(`${replacement}$`);
-  const leadingReplacement = new RegExp(`^${replacement}`);
-
-  const normalizedPath = sanitizedPath
-    .replace(doubleReplacement, replacement)
-    .replace(leadingReplacement, '')
-    .replace(trailingReplacement, '');
-
-  return normalizedPath;
+  return slugify(path.replace(/\./g, replacement), { replacement, lower: true });
 };
 
 export class ParentControl extends React.Component {
