@@ -1,6 +1,6 @@
 {
   "name": "@netlify/netlify-cms-widget-parent",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A Netlify CMS widget to select directory parent for an entry",
   "main": "dist/netlify-cms-widget-parent.js",
   "scripts": {
